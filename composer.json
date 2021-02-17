@@ -1,0 +1,16 @@
+{
+    "name": "mi-squared/zz-importer",
+    "description": "Implementation of mi2 importer for ZZ",
+    "type": "openemr-module",
+    "authors": [
+        {
+            "name": "Ken Chapple",
+            "email": "ken.chapple@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {"Mi2\\ZZImport\\": "src/"}
+    }
+}
