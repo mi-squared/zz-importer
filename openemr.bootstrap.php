@@ -14,8 +14,10 @@ use Mi2\Import\Events\RegisterServices;
 
 function oe_import_register_zz(RegisterServices $event)
 {
-    $importerService = new \Mi2\NewLeafImport\NewLeafImporter();
-    $event->getManager()->register($importerService);
+    if ($event->getKey() == 'zz-importer') {
+        $importerService = new \Mi2\ZZImport\ZZImporter();
+        $event->getManager()->register($importerService);
+    }
     return $event;
 }
 
