@@ -30,7 +30,7 @@ class ZZImporter implements ImporterServiceInterface
         return false;
     }
 
-    public function setup(Batch $batch)
+    public function setup(Batch $batch):bool
     {
         // TODO: Implement setup() method.
     }
